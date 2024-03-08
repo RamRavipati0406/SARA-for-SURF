@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     description_list = []
     # Load the Excel file
-    workbook = openpyxl.load_workbook('THEBOOK-SURF.xlsx')
+    workbook = openpyxl.load_workbook('your-excel-file-name.xlsx')
     new_wb = Workbook()
     new_sheet = new_wb.active
 
@@ -110,7 +110,7 @@ if __name__ == '__main__':
     
     for result in results:
         new_sheet.append([value for value in result.values()])
-        new_wb.save('4turbo--THEBOOK-SURF.xlsx')
+        new_wb.save('destination-file-name.xlsx')
 
     # print(type(json_data))
     # print(json_data)
